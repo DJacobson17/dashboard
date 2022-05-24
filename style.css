@@ -20,32 +20,84 @@ a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.591);
     padding-top: 1rem;
+    margin: auto 5px;
+    align-self: start;
+
 }
 .companyName {
     display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.companyName img {
+    height: 2rem;
+}
+
+.sidebarItem {
+    display:flex;
+    font-size: 1rem;
     align-items: center;
+
+    
+
 }
 
-.companyName::before{
-    content: ''; 
-    background-image: url(https://st2.depositphotos.com/16030310/44045/v/380/depositphotos_440453950-stock-illustration-initial-letter-logo-colored-white.jpg?forcejpeg=true);
-    height: 2rem;
-    width: 2rem;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    margin-right: .5rem;
-}
+.sidebarItem img  {
+    position: relative;
+    top: 7px;
+    height: 1rem;
+    margin: auto 10px auto 5px;
 
-.sidebar img {
-    height: 2rem;
+    
 }
 .header {
     background-color:palegreen;
     grid-column: 2 / 3;
-    ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1rem;
+    padding: 10px;
+    row-gap: 5px;
 
 }
+.searchbar img {
+    height: 1rem;
+    position: relative;
+    top: 4px;
+    margin-right: 3px;
+
+    
+}
+input[type=search] {
+    width: 60%;
+    background-color: lightgrey;
+    border-radius: 10px;
+    justify-self: center;
+    border: none;
+}
+.headerTopRight {
+    
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 3fr; */
+    font-size: 1rem;
+    justify-content: space-around;
+
+}
+
+.alert img {
+    height: 1.25rem;
+    position: relative;
+    top: 5px;
+}
+.icon img {
+    height: 2rem;
+    border-radius: 50%;
+}
+
 
 .content {
     background-color: lightgrey;
@@ -59,3 +111,4 @@ a {
 .trending {
     background-color:aqua;
 }
+
