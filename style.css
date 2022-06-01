@@ -160,6 +160,7 @@ button {
     grid-template-columns: 2fr 0.75fr;
     grid-template-rows: 1fr 1fr;
     padding: 0 10px 10px 10px;
+    font-size: 1.5rem;
 }
 
 .projects {
@@ -192,13 +193,13 @@ button {
 }
 
 .card .synopsis .projectName {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
 
 }
 
 .cardContent {
-    font-size: .75rem;
+    font-size: 1rem;
 }
 .card .cardActions {
     display: flex;
@@ -207,10 +208,36 @@ button {
 }
 
 .announcements {
-    background-color: khaki;
+    
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
-.trending {
-    background-color:aqua;
+.announcetrendbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 25px;
+    position: relative;
+    top: -16px;
+    box-shadow: 3px 3px 5px;
 }
+
+.border {
+    height: 2px;
+    width: 100%;
+    background-color:lightgray;
+}
+.announcementHeader {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.announcementContent {
+    font-size: .5rem;
+}
+
+
 
